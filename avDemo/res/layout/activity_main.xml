@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.beidouapp.et.av.activity.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lblUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+string/user" />
+
+        <TextView
+            android:id="@+id/lblUserIdp2p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtCallStatep2p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@+string/call_state" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/txtUserId"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="@+string/loginUserId" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login" />
+
+        <EditText
+            android:id="@+id/txtCallerId"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@+string/callerId" />
+
+        <Button
+            android:id="@+id/btnCalling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+string/calling" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btchat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cbxVideop2p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@+string/video" />
+
+        <CheckBox
+            android:id="@+id/cbxAudiop2p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@+string/audio" />
+
+        <Button
+            android:id="@+id/btnAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@+string/btn_agree" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnShowPreviewp2p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@+string/show_preview" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnHangupp2p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@+string/hangup" />
+        </LinearLayout>
+
+        <SurfaceView
+            android:id="@+id/surfacePreviewVideop2p"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".50" />
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/surfaceIncomingVideop2p"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

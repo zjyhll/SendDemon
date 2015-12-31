@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">avDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_call">Call</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="show_preview">预览</string>
+    <string name="hide_preview">隐藏</string>
+    <string name="hangup">挂断</string>
+    <string name="audio">音频</string>
+    <string name="video">视频</string>
+    <string name="user">呼叫方：</string>
+    <string name="calling">呼叫</string>
+    <string name="chat">聊天</string>
+    <string name="callerId">2190</string>
+    <string name="loginUserId">2188</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_agree">同意</string>
+    <string name="call_state">Call state</string>
+    <string name="title_activity_av">AVActivity</string>
+    <string name="title_activity_talking">TalkingActivity</string>
+    <string name="title_activity_avcall">AVCallActivity</string>
+    <string name="title_activity_avlogin">AVLoginActivity</string>
+    <string name="title_activity_avmain">AVMainActivity</string>
+    <string name="title_activity_calling">CallingActivity</string>
+    <string name="title_activity_avcalling">AVCallingActivity</string>
+    <string name="title_activity_avp2pcalling">AVP2pCalling</string>
+    <string name="title_activity_im">IMActivity</string>
+<string name="str_reorder_normal">按住说话</string>
+    <string name="str_reorder_recording">松开结束</string>
+    <string name="str_reorder_want_to_cancel">松开手指，取消发送</string>
+</resources>
